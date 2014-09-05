@@ -3,11 +3,25 @@
 snippet definition
 alias   \definition
         \begin{definition}
-                ${1:TARGET}
+                ${1}
         \end{definition}
 
 snippet theorem
 alias   \theorem
         \begin{theorem}
-                ${1:TARGET}
+                ${1}
         \end{theorem}
+
+snippet tikzpicture
+alias   \tikzpicture
+        \begin{tikzpicture}
+                ${1}
+        \end{tikzpicture}
+
+snippet arrow
+alias   \arrow
+        \draw[->] (${1:START}) -- (${2:END});
+
+snippet node
+alias   \node
+        \node at (${1:X},${2:Y}) {${3}}; 
