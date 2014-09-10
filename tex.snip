@@ -12,6 +12,12 @@ alias   \theorem
                 ${1}
         \end{theorem}
 
+snippet proof
+alias   \proof
+        \begin{proofatend}
+                ${1:PROOF}
+        \end{proofatend}
+
 snippet tikzpicture
 alias   \tikzpicture
         \begin{tikzpicture}
@@ -25,3 +31,13 @@ alias   \arrow
 snippet node
 alias   \node
         \node at (${1:X},${2:Y}) {${3}}; 
+
+snippet equation
+alias   \equation
+        \begin{equation}
+        \begin{aligned}
+                ${1:EQ}
+        \end{aligned}
+        \end{equation}
+
+
