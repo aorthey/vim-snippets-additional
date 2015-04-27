@@ -1,5 +1,13 @@
 #TEX SNIPPETS
 
+snippet figure
+alias \figure
+        \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{${1}}
+                \caption{\label{fig:name}}
+        \end{figure}
+
 snippet definition
 alias   \definition
         \begin{definition}
