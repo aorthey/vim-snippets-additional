@@ -15,7 +15,10 @@ alias \includegraphics
 snippet minipage
 alias \minipage
         \begin{minipage}[t]{0.48\linewidth}
-                ${1}
+                \vspace*{0pt}
+                \begin{center}
+                        ${1}
+                \end{center}
         \end{minipage}
 
 snippet definition
@@ -73,9 +76,9 @@ alias   \node
 snippet equation
 alias   \equation
         \begin{equation}
-        \begin{aligned}
-                ${1:EQ}
-        \end{aligned}
+                \begin{aligned}
+                        ${1:EQ}
+                \end{aligned}
         \end{equation}
 
 snippet center
