@@ -8,6 +8,16 @@ snippet cout2
 alias std::cout2
   std::cout << "[" << ${1} << "] " << ${2} << std::endl;
 
+snippet coutline
+alias cline
+  std::cout << std::string(80, '-') << std::endl;
+
+snippet doublecline
+alias dcline
+  std::cout << std::string(80, '-') << std::endl;
+  std::cout << ${1} << std::endl;
+  std::cout << std::string(80, '-') << std::endl;
+
 snippet class
   class ${1}{
     public:
