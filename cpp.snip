@@ -23,7 +23,22 @@ snippet class
     public:
       $1();
   };
-snippet for
+snippet fori
+alias for
   for(int i = 0; i < ${1}; i++){
     std::cout << "[" << i << "/" << $1 << "] " << std::endl;
+  }
+snippet forj
+  for(int j = 0; j < ${1}; j++){
+    std::cout << "[" << j << "/" << $1 << "] " << std::endl;
+  }
+snippet fork
+  for(int k = 0; k < ${1}; k++){
+    std::cout << "[" << k << "/" << $1 << "] " << std::endl;
+  }
+snippet for2
+  for(int i = 0; i < ${1}; i++){
+    for(int j = 0; j < ${2}; j++){
+        std::cout << "[" << i << "," << j << "] " << std::endl;
+    }
   }
