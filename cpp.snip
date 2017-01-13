@@ -23,6 +23,7 @@ snippet class
     public:
       $1();
   };
+
 snippet fori
 alias for
   for(int i = 0; i < ${1}; i++){
@@ -41,4 +42,9 @@ snippet for2
     for(int j = 0; j < ${2}; j++){
         std::cout << "[" << i << "," << j << "] " << std::endl;
     }
+  }
+snippet ford
+  double dstep = 0.01;
+  for(double d = 0; d < 1; d+=dstep){
+    std::cout << "[" << d << "/" << 1 << "] " << std::endl;
   }
