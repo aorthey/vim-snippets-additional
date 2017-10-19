@@ -2,11 +2,7 @@
 
 snippet cout
 alias std::cout
-  std::cout << ${1} << std::endl;
-
-snippet cout2
-alias std::cout2
-  std::cout << "[" << ${1} << "] " << ${2} << std::endl;
+  std::cout << ${0} << std::endl;
 
 snippet coutline
 alias cline
@@ -26,7 +22,7 @@ snippet sline
 snippet doublecline
 alias dcline
   std::cout << std::string(80, '-') << std::endl;
-  std::cout << ${1} << std::endl;
+  std::cout << ${0} << std::endl;
   std::cout << std::string(80, '-') << std::endl;
 
 snippet class
@@ -37,31 +33,26 @@ snippet class
 
 snippet fori
 alias for
-  for(uint i = 0; i < ${1}; i++){
-    std::cout << "[" << i << "/" << $1 << "] " << std::endl;
+  for(uint i = 0; i < ${0}; i++){
   }
 snippet forj
-  for(uint j = 0; j < ${1}; j++){
-    std::cout << "[" << j << "/" << $1 << "] " << std::endl;
+  for(uint j = 0; j < ${0}; j++){
   }
 snippet fork
-  for(uint k = 0; k < ${1}; k++){
-    std::cout << "[" << k << "/" << $1 << "] " << std::endl;
+  for(uint k = 0; k < ${0}; k++){
   }
 snippet for2
-  for(uint i = 0; i < ${1}; i++){
-    for(int j = 0; j < ${2}; j++){
-        std::cout << "[" << i << "," << j << "] " << std::endl;
+  for(uint i = 0; i < ${0}; i++){
+    for(int j = 0; j < ; j++){
     }
   }
 snippet ford
   double dstep = 0.01;
-  for(double d = 0; d < 1; d+=dstep){
-    std::cout << "[" << d << "/" << 1 << "] " << std::endl;
+  for(double d = 0; d < ${0}; d+=dstep){
   }
 snippet svd
-  std::vector<double> 
+  std::vector<double> ${0}
 snippet svi
-  std::vector<int> 
+  std::vector<int> ${0}
 snippet svu
-  std::vector<uint> 
+  std::vector<uint> ${0}
