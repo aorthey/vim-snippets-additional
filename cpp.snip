@@ -1,6 +1,5 @@
 #CPP SNIPPETS
 
-
 snippet cout
 alias std::cout
   std::cout << ${0} << std::endl;
@@ -31,30 +30,40 @@ snippet class
   class ${1}{
     public:
       $1();
+      ~$1();
+    private:
   };
 
 snippet fori
 alias for
-  for(uint i = 0; i < ${0}; i++){
+  for(unsigned int i = 0; i < ${0}; i++){
   }
 snippet forj
-  for(uint j = 0; j < ${0}; j++){
+  for(unsigned int j = 0; j < ${0}; j++){
   }
 snippet fork
-  for(uint k = 0; k < ${0}; k++){
+  for(unsigned int k = 0; k < ${0}; k++){
   }
 snippet for2
-  for(uint i = 0; i < ${0}; i++){
-    for(int j = 0; j < ; j++){
+  for(unsigned int i = 0; i < ${0}; i++){
+    for(unsigned int j = 0; j < ; j++){
     }
   }
 snippet ford
   double dstep = 0.01;
   for(double d = 0; d < ${0}; d+=dstep){
   }
+snippet while
+  unsigned int ctr = 0;
+  while(ctr++ < ${0}) {
+    
+  }
+
 snippet svd
   std::vector<double> ${0}
 snippet svi
   std::vector<int> ${0}
 snippet svu
-  std::vector<uint> ${0}
+  std::vector<unsigned int> ${0}
+snippet svs
+  std::vector<std::string> ${0}
